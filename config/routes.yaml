@@ -1,0 +1,28 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+todo_home:
+    path: /
+    controller: App\Controller\MainController::index
+
+# Api
+todo_fetch:
+    path: /fetch
+    controller: App\Controller\MainController::fetch
+
+todo_add:
+    path: /add
+    controller: App\Controller\MainController::add
+
+todo_update:
+    path: /update
+    controller: App\Controller\MainController::update
+
+todo_remove:
+    path: /remove
+    controller: App\Controller\MainController::remove
